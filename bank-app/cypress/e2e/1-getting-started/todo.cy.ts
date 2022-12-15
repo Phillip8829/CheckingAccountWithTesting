@@ -25,7 +25,7 @@
     // We use the `cy.get()` command to get all elements that match the selector.
     // Then, we use `should` to assert that there are two matched items,
     // which are the two default items.
-    cy.visit('http://localhost:3000/')
+    cy.visit("localhost:3000 ")
     cy.get('button').contains("testTwo").should("be.disabled")
     cy.get('button').contains("Submit New Account").should("be.enabled")
     cy.get('input').click().type("Billy")

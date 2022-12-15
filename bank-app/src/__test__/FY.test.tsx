@@ -3,7 +3,7 @@ import '@testing-library/jest-dom'
 import {CheckingVersionTwo} from "../Componenets/CheckingVersionTwo";
 
 
-test('the clear button switches from AC to C when there is an entry', () => {
+test('One Button Should Be Enabled and one should be disabled', () => {
     render(<CheckingVersionTwo/>)
     const output = screen.getByRole('button', { name: "Submit New Account" });
     const output2 = screen.getByRole('button', { name: "testTwo" });
